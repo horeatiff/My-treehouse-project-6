@@ -35,7 +35,7 @@ start.addEventListener("click", () => {
   }
 });
 
-//return a random phrase from the array
+// return a random phrase from the array
 function getRandomPhraseAsArray(arr) {
   const randomNr = Math.floor(Math.random() * arr.length);
   const randomPh = arr[randomNr];
@@ -140,26 +140,24 @@ function showPhrase() {
   overlay.appendChild(h4);
 }
 
-//start game function
+// start game function
 function startGame() {
   const phraseArray = getRandomPhraseAsArray(phrases);
   addPhraseToDisplay(phraseArray);
 }
 
-//reset game function
+// reset game function
 function resetGame() {
   missed = 0;
 
+  // remove items
   while (phraseList.firstChild) {
     phraseList.removeChild(phraseList.firstChild);
   }
-
   const h3 = document.querySelector("h3");
   h3.parentNode.removeChild(h3);
-
   const h4 = document.querySelector("h4");
   h4.parentNode.removeChild(h4);
-
   for (let i = 0; i < lifeArr.length; i++) {
     lifeArr[i].src = "images/liveHeart.png";
   }
