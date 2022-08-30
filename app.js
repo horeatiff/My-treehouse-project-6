@@ -1,4 +1,4 @@
-// constant, var, let
+// constant, let
 const phrase = document.querySelector("#phrase");
 const overlay = document.querySelector("#overlay");
 const start = document.querySelector(".btn__reset");
@@ -10,7 +10,6 @@ const life = document.querySelector(".tries img");
 let missed = 0;
 
 // phrases array
-
 let phrases = [
   "a dime a dozen",
   "call it a day",
@@ -75,7 +74,6 @@ keys.addEventListener("click", (e) => {
       missed++;
     }
   }
-
   checkWin();
 });
 
