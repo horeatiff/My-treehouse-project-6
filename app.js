@@ -103,6 +103,7 @@ function checkWin() {
   const totalLetters = document.querySelectorAll(".letter");
   const visibleLetters = document.querySelectorAll(".show");
   const h3 = document.createElement("h3");
+
   // display win message and Play Again
   if (visibleLetters.length === totalLetters.length) {
     removeClass();
@@ -112,6 +113,7 @@ function checkWin() {
     overlay.appendChild(h3);
     h3.textContent = "You Win!";
     showPhrase();
+
     // display lost message and Try Again
   } else if (missed >= 5) {
     removeClass();
