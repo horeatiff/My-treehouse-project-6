@@ -99,6 +99,7 @@ button {
   color: #000;
   background-color: #76ce82;
   transition: 0.5s ease-in-out;
+  transform: scaleY(1.1);
 }
 
 /* Keyboard */
@@ -113,6 +114,7 @@ button {
   border-radius: 5px;
   font-size: var(--font-size-medium);
   color: #ffffff;
+  transition: 0.5s ease-in-out;
 }
 
 .btn__reset {
