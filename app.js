@@ -162,7 +162,6 @@ function resetGame() {
     lifeArr[i].src = "images/liveHeart.png";
   }
   
-
   //reset classes and attributes of keyboard
   const keysButton = document.querySelectorAll("#qwerty button");
   for (let i = 0; i < keysButton.length; i++) {
