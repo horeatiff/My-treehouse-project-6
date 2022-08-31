@@ -7,16 +7,14 @@ const keys = document.querySelector("#qwerty");
 const lifeList = document.querySelector("#scoreboard ol");
 const lifeArr = document.querySelectorAll(".tries img");
 const life = document.querySelector(".tries img");
-let missed = 0;
-
-// phrases array
-let phrases = [
+const phrases = [
   "so far so good",
   "wild goose chase",
   "haste makes waste",
   "like riding a bycicle",
   "spill the beans",
 ];
+let missed = 0;
 
 // start game button press
 start.addEventListener("click", () => {
@@ -156,7 +154,7 @@ function resetGame() {
   for (let i = 0; i < lifeArr.length; i++) {
     lifeArr[i].src = "images/liveHeart.png";
   }
-  
+
   //reset classes and attributes of keyboard
   const keysButton = document.querySelectorAll("#qwerty button");
   for (let i = 0; i < keysButton.length; i++) {
