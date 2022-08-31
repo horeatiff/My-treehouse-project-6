@@ -11,16 +11,11 @@ let missed = 0;
 
 // phrases array
 let phrases = [
-  "a dime a dozen",
-  "call it a day",
   "so far so good",
-  "the best of both worlds",
   "wild goose chase",
   "haste makes waste",
   "like riding a bycicle",
-  "run like the wind",
   "spill the beans",
-  "once in a blue moon",
 ];
 
 // start game button press
