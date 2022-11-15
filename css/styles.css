@@ -117,6 +117,14 @@ button {
   transition: 0.5s ease-in-out;
 }
 
+.wrong {
+  background: red;
+  border-radius: 5px;
+  font-size: var(--font-size-medium);
+  color: yellow;
+  transition: 0.5s ease-in-out;
+}
+
 .btn__reset {
   padding: 8px;
   margin: 50px auto;
